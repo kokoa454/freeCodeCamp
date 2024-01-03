@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>RUSSIA-IS-THE-BEST-COUNTRY.ru</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">Opinion poll for foreigners by Russian government</h1>
+      <p id="description">Thank you for taking the time to make our Russia <strong>the greatest country</strong> in the world!</p>
+    </div>
+    <div class="container">
+      <form id="survey-form">
+
+        <!--name-->
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" class="form-control" type="text" placeholder="Enter your full-name..." required>
+        </div>
+
+        <!--email-->
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="form-control" type="email" placeholder="Enter your Email..." required>
+        </div>
+
+        <!--age-->
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input id="number" class="form-control" type="number" min="18" max="120" placeholder="Age">
+        </div>
+
+        <!--address-->
+        <div class="form-group">
+          <label id="place-label" for="dropdown">Which continent is your current address located on?</label>
+          <select id="dropdown" class="form-control" name="place" required>
+            <option disabled selected value>(Select)</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="North-America">North-America</option>
+            <option value="South-America">South-America</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!--Russia love-->
+        <div class="form-group">
+          <label>Do you love RUSSIA?</label>
+          <label for="of-course">
+            <input id="of-course" class="input-radio" name="favorability-rating" type="radio" value="of-course" checked>Of course
+          </label>
+          <label for="normal">
+            <input id="normal" class="input-radio" name="favorability-rating" type="radio" value="normal">Normal
+          </label>
+          <label for="not-much">
+            <input id="not-much" class="input-radio" name="favorability-rating" type="radio" value="not-much">Not much
+          </label>
+          <label for="no">
+            <input id="no" class="input-radio" name="favorability-rating" type="radio" value="no">No
+          </label>
+        </div>
+
+        <!--travel-->
+        <div class="form-group">
+          <label>Where do you want to go, if you travel in Russia?(Check all that apply)</label>
+          <label for="Moscow">
+            <input id="Moscow" class="input-checkbox" name="place-to-go" type="checkbox" value="Moscow">Moscow
+          </label>
+          <label for="Petersburg">
+            <input id="Petersburg" class="input-checkbox" name="place-to-go" type="checkbox" value="Petersburg">Petersburg
+          </label>
+          <label for="Kazan">
+             <input id="Kazan" class="input-checkbox" name="place-to-go" type="checkbox" value="Kazan">Kazan
+          </label>
+          <label for="Yekaterinburg">
+            <input id="Yekatrinburg" class="input-checkbox" name="place-to-go" type="checkbox" value="Yekaterinburg">Yekaterinburg
+          </label>
+          <label for="Novosibirsk">
+            <input id="Noosibirsk" class="input-checkbox" name="place-to-go" type="checkbox" value="Novosibirsk">Novosibirsk
+          </label>
+          <label for="Vladivostok">
+            <input id="Vladivostok" class="input-checkbox" name="place-to-go" type="checkbox" value="Vladivostok">Vladivostok
+          </label>
+          <label for="other">
+            <input id="other" class="input-checkbox" name="place-to-go" type="checkbox" value="other">Other
+          </label>
+        </div>
+
+        <!--comment-->
+        <div class="form-group">
+          <p>Any comments to Mr. Putin?</p>
+          <textarea id="comment" class="input-comment" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <!--submit button-->
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  <body>
+</html>
