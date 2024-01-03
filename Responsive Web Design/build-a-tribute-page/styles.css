@@ -1,0 +1,83 @@
+body{
+  background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+header{
+  text-align: center;
+  background-color: #D3D3D3;
+  margin: 30px 2px 0 2px;
+  height: 160px;
+  padding-top: 10;
+  border-radius: 4px 4px 0 0;
+}
+
+header #title{
+font-size: 50px;
+}
+
+header #description{
+  font-size: 18px;
+}
+
+#main{
+  background-color: #D3D3D3;
+  margin: 0 2px 30px 2px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+}
+
+#img-div{
+  background-color: white;
+  margin: 0 20px 0 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img{
+  display: block;
+}
+
+#image{
+  margin: 0 auto 0 auto;
+  height: auto;
+  max-width: 100%;
+}
+
+#img-caption{
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#tribute-info{
+  width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+#tribute-info #info{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 60px auto;
+}
+
+#tribute-info ul{
+  list-style-type: none;
+}
+
+#tribute-info li{
+  font-size: 20px;
+  margin: 40px auto 40px auto;
+  line-height: 1.7;
+}
+
+#tribute-info #message{
+  font-size: 22px;
+  margin-top: 80px;
+}
+
+footer{
+  text-align: center;
+  margin: 90px auto 0 auto;
+}
