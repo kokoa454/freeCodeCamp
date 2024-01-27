@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>The HTML documentation for begginers</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#history_and_evolution">History and Evolution</a></li>
+        <li><a class="nav-link" href="#basics">Basics</a></li>
+        <li><a class="nav-link" href="#elements_and_tags">Elements and Tags</a></li>
+        <li><a class="nav-link" href="#text_formatting">Text Formatting</a></li>
+        <li><a class="nav-link" href="#links_and_images">Links and Images</a></li>
+        <li><a class="nav-link" href="#lists">Lists</a></li>
+        <li><a class="nav-link" href="#tables">Tables</a></li>
+        <li><a class="nav-link" href="#forms">Forms</a></li>
+        <li><a class="nav-link" href="#semantic_html">Semantic HTML</a></li>
+        <li><a class="nav-link" href="#advanced_html_techniques">Advanced HTML Techniques</a></li>
+        <li><a class="nav-link" href="#conclusion_and_resources">Conclusion and Resources</a></li>
+
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header id="introduction">Introduction</header>
+        <article>
+          <p>
+            Welcome to the HTML Technical Documentation! HTML (HyperText Markup Language) is the backbone of web development, providing the structure and content of web pages. Whether you're new to web development or looking to expand your skills, this guide aims to provide a comprehensive understanding of HTML, covering everything from basic syntax to advanced techniques.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="history_and_evolution">
+        <header id="history_and_evolution">History and Evolution</header>
+        <article>
+          <p>
+            HTML has evolved significantly since its inception in the early 1990s. From the basic structure of HTML 1.0 to the rich multimedia capabilities of HTML5, each version has introduced new elements, attributes, and features. Understanding the history and evolution of HTML is essential for grasping its current capabilities and anticipating future developments.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="basics">
+        <header id="basics">Basics</header>
+        <article>
+          <p>
+            HTML documents are built using a combination of elements and tags. Elements are the building blocks of HTML, represented by tags enclosed in angle brackets. The basic structure of an HTML document includes the <code>&lt;!DOCTYPE html&gt;</code> declaration, the <code>&lt;html&gt;</code> element as the root of the document, the <code>&lt;head&gt;</code> element containing metadata, and the <code>&lt;body&gt;</code> element containing the content visible to users.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="elements_and_tags">
+        <header id="elements_and_tags">Elements and Tags</header>
+        <article>
+          <p>
+            HTML elements represent the structure and content of a web document. Each element is enclosed in tags, with opening and closing tags to define its beginning and end. Some elements are self-closing and do not require a closing tag. Elements can have attributes that provide additional information or modify their behavior.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;!-- Opening tag --&gt;
+&lt;element attribute="value"&gt;
+
+&lt;!-- Closing tag --&gt;
+&lt;/element&gt;
+
+&lt;!-- Self-closing tag --&gt;
+&lt;self-closing-element attribute="value" /&gt;
+        </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="text_formatting">
+        <header id="text_formatting">Text formatting</header>
+        <article>
+          <p>
+            HTML provides various tags for formatting text content within web pages. Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) are used to define hierarchical structure, paragraphs (<code>&lt;p&gt;</code>) separate blocks of text, emphasis (<code>&lt;em&gt;</code>) and strong emphasis (<code>&lt;strong&gt;</code>) provide emphasis, and other tags like <<code>&lt;span&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code>, and <code>&lt;strike&gt;</code> offer additional formatting options.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;em&gt;Emphasized text&lt;/em&gt;
+&lt;strong&gt;Strongly emphasized text&lt;/strong&gt;
+
+&lt;span style="color: red;"&gt;Red text&lt;/span&gt;
+&lt;div style="background-color: yellow;"&gt;Yellow background&lt;/div&gt;
+        </code></pre>
+
+        </article>
+      </section>
+      <section class="main-section" id="links_and_images">
+        <header id="links_and_images">Links and Images</header>
+        <article>
+          <p>
+            Hyperlinks (<code>&lt;a&gt;</code>) allow users to navigate between pages, while images (<code>&lt;img&gt;</code>) enhance visual content. Hyperlinks have an href attribute specifying the destination URL, and images have a src attribute specifying the image file's URL. Both can have alt attributes for accessibility.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+&lt;img src="image.jpg" alt="Sample Image"&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="lists">
+        <header id="lists">Lists</header>
+        <article>
+          <p>
+            HTML supports ordered lists (<code>&lt;ol&gt;</code>), unordered lists (<code>&lt;ul&gt;</code>), and definition lists (<code>&lt;dl&gt;</code>). List items are defined with <code>&lt;li&gt;</code> tags, and nested lists can be created by placing lists within list items.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Red&lt;/li&gt;
+  &lt;li&gt;Green&lt;/li&gt;
+  &lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Description 1&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Description 2&lt;/dd&gt;
+&lt;/dl&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="tables">
+        <header id="tables">Tables</header>
+        <article>
+          <p>Tables (<code>&lt;table&gt;</code>) are used to display tabular data in rows and columns. They consist of rows (<code>&lt;tr&gt;</code>), which contain header cells (<code>&lt;th&gt;</code>) for column headings or data cells (<code>&lt;td&gt;</code>) for actual data.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="forms">
+        <header id="forms">Forms</header>
+        <article>
+          <p>HTML forms (<code>&lt;form&gt;</code>) allow users to input data, which can be submitted to a server for processing. Form elements include text inputs (<code>&lt;input type="text"&gt;</code>), checkboxes (<code>&lt;input type="checkbox"&gt;</code>), radio buttons (<code>&lt;input type="radio"&gt;</code>), dropdown menus (<code>&lt;select&gt;</code>), and buttons (<code>&lt;button&gt;</code>).
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="username"&gt;Username:&lt;/label&gt;
+  &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;
+  &lt;label for="password"&gt;Password:&lt;/label&gt;
+  &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="semantic_html">
+        <header id="semantic_html">Semantic HTML</header>
+        <article>
+          <p>
+            Semantic HTML elements provide meaning to the content, making it more accessible to users and search engines. Elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code> describe the purpose or role of the content they contain, improving the structure and accessibility of web documents.
+          </p>
+          <p class="sample-code">Sample Code: </p>
+          <pre><code>
+&lt;header&gt;
+  &lt;h1&gt;Website Header&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;article&gt;
+  &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;p&gt;Article content goes here...&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2022 Footer Content&lt;/p&gt;
+&lt;/footer&gt;
+          </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="advanced_html_techniques">
+        <header id="advanced_html_techniques">Advanced HTML Techniques</header>
+        <article>
+          <p>
+            Advanced HTML techniques leverage HTML5 features and APIs to create dynamic and interactive web experiences. These techniques include responsive web design using media queries, multimedia integration with <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags, canvas drawing for graphics rendering, and geolocation services using the Geolocation API.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="conclusion_and_resources">
+        <header id="conclusion_and_resources">Conclusion and Resources</header>
+        <article>
+          <p>
+            In conclusion, HTML is a fundamental technology for web development, providing the structure and content of web documents. By mastering HTML concepts and techniques, developers can create compelling and accessible web experiences for users. To continue your learning journey, explore additional resources such as online tutorials, documentation, and community forums dedicated to HTML and web development.
+          </p>
+          <br>
+          <p>You also can visit there for your study of HTML:</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN (Mozilla Developer Network)</a></li>
+            <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+            <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-html">Codecademy</a></li>
+            <li><a href="https://learn.shayhowe.com/">Learn to Code HTML&CSS</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
