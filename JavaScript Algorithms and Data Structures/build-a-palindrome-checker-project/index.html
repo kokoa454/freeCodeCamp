@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <script src="https://kit.fontawesome.com/5e5e696254.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = ./styles.css>
+  </head>
+
+  <body>
+    <div id ="particles-js"></div>
+    <div id = "wrapper">
+
+      <header>
+        <div class = "project-editor">
+          <h2>TNOK</h2>
+          <p>©Created for
+            <a
+              href = "https://www.freecodecamp.com/"
+              target = "_blank"
+            >
+              freeCodeCamp
+              <i class = "fa-brands fa-free-code-camp"></i>
+            </a>
+          </p>
+        </div>
+        <h1 class = "title">Is it a Palindrome?</h1>
+      </header>
+
+      <main>
+        <div class = "palindrome-search">
+          <label>Enter in text to check for a palindrome:</label>
+          <input class = "palindrome-input" id = "text-input" value = "" type = "text" />
+          <button class = "palindrome-btn" id = "check-btn">Check</button>
+          <div class = "palindrome-result hide" id = "result"></div>
+        </div>
+        <div class = "difinition">
+          <p>💡 "A palindrome is a string that reads the same forwards and backwards. In other words, it is a sequence of characters that remains unchanged when read in reverse order. Examples of palindromes include <strong>'radar'</strong>, <strong>'level'</strong>, and <strong>'deified'</strong>."</p>
+        </div>
+      </main>
+    </div>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src = "./script.js"></script>
+
+  </body>
+</html>
