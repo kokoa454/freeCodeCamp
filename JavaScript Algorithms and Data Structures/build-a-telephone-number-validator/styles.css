@@ -214,13 +214,18 @@ header p{
   width: 180px;
   height: 26px;
   margin-top: 20px;
+  color: black;
+  border: 1.5px solid black;
 }
 
 #results-div{
   margin-top: 20px;
-  background-color: red;
+  padding: 80px 10px;
+  background-color: #C0C0C0;
   width: 180px;
   height: 200px;
+  color: black;
+  border: 1.5px solid black;
 }
 
 .buttons{
@@ -233,9 +238,17 @@ header p{
 #check-btn{
   width: 70px;
   height: 23px;
+  background-color: #C0C0C0;
+  color: black;
+  font-weight: bold;
+  border: 1.5px solid black;
 }
 
 #clear-btn{
   width: 70px;
   height: 23px;
+  background-color: #C0C0C0;
+  color: black;
+  font-weight: bold;
+  border: 1.5px solid black;
 }
