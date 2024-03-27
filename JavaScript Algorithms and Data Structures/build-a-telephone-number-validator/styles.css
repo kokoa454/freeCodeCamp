@@ -215,7 +215,10 @@ header p{
   height: 26px;
   margin-top: 20px;
   color: black;
+<<<<<<< HEAD
   border: 1.5px solid black;
+=======
+>>>>>>> 723354e4e1675c15f47fe037b0ebfdf989d9515d
 }
 
 #results-div{
